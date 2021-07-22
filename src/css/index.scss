@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media only screen 
+and (min-device-width : 813px) {
+    #root {
+        height: 100%;
+    }
+}
+
+
+.app-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .column-card-container {
+        display: flex;
+        flex-flow: row;
+
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+        width: 80%;
+        
+        #left { 
+            background: hsl(31, 77%, 52%);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            
+            button { color: hsl(31, 77%, 52%); }
+        }
+
+        #center { 
+            background: hsl(184, 100%, 22%);
+            button { color: hsl(184, 100%, 22%); }
+        }
+
+        #right { 
+            background: hsl(179, 100%, 13%);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            button { color: hsl(179, 100%, 13%); }
+        }
+
+        .column-card-item {
+            flex: 1;
+            justify-self: center;
+            height: 450px;
+
+            padding: 3em;
+
+            color: hsla(0, 0%, 100%, 0.75);
+
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+
+            .column-card-item-car-pic {
+
+            }
+            
+            .column-card-item-text {
+                flex-basis: 50%;
+
+                .column-card-item-h1 {
+                    font-family: 'Big Shoulders Display', cursive;
+                    font-size: 24px;
+                    
+                    h1 {
+                        margin: 0; 
+                        padding: 0;
+                    }
+                }
+    
+                .column-card-item-p {
+                    font-size: 15px;
+                    line-height: 2em;
+                }
+            }
+
+            .column-card-item-button {
+                justify-self: flex-end;
+
+                button {
+                    border-radius: 25px;
+                    border: none;
+                    padding: 1.2em;
+                    width: 175px;
+                    font-weight: 700;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){ 
+    
+    .app-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .column-card-container {
+            display: flex;
+            flex-flow: column;
+            margin: 3em 0em;
+            //height: 100%;
+            width: 80%;
+
+            #left{ 
+                background: hsl(31, 77%, 52%);
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 0px;
+                
+                button { color: hsl(31, 77%, 52%); }
+            }
+    
+            #center { 
+                background: hsl(184, 100%, 22%);
+                button { color: hsl(184, 100%, 22%); }
+            }
+    
+            #right { 
+                background: hsl(179, 100%, 13%);
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+    
+                button { color: hsl(179, 100%, 13%); }
+            }
+
+            .column-card-item { 
+                
+            }
+        }
+    }
+}

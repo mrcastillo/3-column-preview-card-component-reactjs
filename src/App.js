@@ -8,7 +8,7 @@ function App() {
 
       <div className={"column-card-container"}>
 
-        <div className={"column-card-item"} id={"left"}>
+        <div className={"column-card-item"} id={"sedans"}>
           <div className={"column-card-item-car-pic"}>
             <img src={sedans} />
           </div>
@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
 
-        <div className={"column-card-item"} id={"center"}>
+        <div className={"column-card-item"} id={"suvs"}>
           <div className={"column-card-item-car-pic"}>
             <img src={suvs} />
           </div>
@@ -49,7 +49,7 @@ function App() {
           </div>
         </div>
 
-        <div className={"column-card-item"} id={"right"}>
+        <div className={"column-card-item"} id={"luxury"}>
           <div className={"column-card-item-car-pic"}>
             <img src={luxury} />
           </div>

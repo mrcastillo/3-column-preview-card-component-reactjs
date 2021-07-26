@@ -1,23 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
-html, body {
+html, body  {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    height: 100%;
+    ///height: 100%;
     background: hsl(0, 0%, 95%);
     font-family: 'Lexend Deca', sans-serif;
+}    
+
+@media only screen and (max-width: 812px) { 
+    .app-container {
+        display: flex;
+        flex-flow: column;
+        margin: 5em 0em;
+
+        .column-card-container {
+            display: flex;
+            flex-flow: column;
+            margin: 0em 1em;   
+
+            .column-card-item {
+                padding: 3em;
+                color: hsl(0, 0%, 95%);
+
+                .column-card-item-text {
+                    .column-card-item-h1 {
+                        font-family: 'Big Shoulders Display', cursive;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    .column-card-item-p {
+                        font-weight: 400;
+
+                        p {
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 1.8em;
+                            color: hsla(0, 0%, 100%, 0.75);
+                        }
+                    }
+                }
+
+                .column-card-item-button {
+                    justify-self: flex-end;
+                    padding: 1em 0em 0em 0em;
+
+                    button {
+                        background: hsl(0, 0%, 95%);
+                        border-radius: 25px;
+                        border: none;
+                        padding: 1.2em;
+                        width: 175px;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            #sedans {
+                background: hsl(31, 77%, 52%);
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+
+                button { color: hsl(31, 77%, 52%); }
+            }
+
+            #suvs {
+                background: hsl(184, 100%, 22%);
+                button { color: hsl(184, 100%, 22%); }
+            }
+
+            #luxury {
+                background: hsl(179, 100%, 13%);
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+
+                button { color: hsl(179, 100%, 13%); }
+            }
+        }
+    }
 }
 
-@media only screen 
-and (min-device-width : 813px) {
-    #root {
+@media only screen and (min-width: 813px) { 
+
+    body, html, #root {
         height: 100%;
+    }
+
+    .app-container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .column-card-container {
+            display: flex;
+
+            margin: 0em 19%;
+
+            .column-card-item {
+                padding: 2.5em;
+                color: hsl(0, 0%, 95%);
+
+                display: flex;
+                flex-flow: column;
+
+                .column-card-item-text {
+                    
+                    flex: 1;
+                    
+
+                    .column-card-item-h1 {
+                        font-family: 'Big Shoulders Display', cursive;
+                        font-weight: 700;
+                    }
+
+                    .column-card-item-p {
+                        font-weight: 400;
+                        
+                        p {
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 1.5em;
+                            color: hsla(0, 0%, 100%, 0.75);
+                        }
+                    }
+                }
+
+                .column-card-item-button {
+                    justify-self: flex-end;
+                    margin-top: 5em;
+                
+                    button {
+                        background: hsl(0, 0%, 95%);
+                        border-radius: 25px;
+                        border: none;
+                        padding: 1em;
+                        width: 150px;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+                }
+            }
+            #sedans {
+                background: hsl(31, 77%, 52%);
+                border-bottom-left-radius: 12px;
+                border-top-left-radius: 12px;
+
+                button { color: hsl(31, 77%, 52%); }
+            }
+
+            #suvs {
+                background: hsl(184, 100%, 22%);
+                button { color: hsl(184, 100%, 22%); }
+            }
+
+            #luxury {
+                background: hsl(179, 100%, 13%);
+                border-top-right-radius: 12px;
+                border-bottom-right-radius: 12px;
+
+                button { color: hsl(179, 100%, 13%); }
+            }
+        }
     }
 }
 
 
+/*
 .app-container {
     display: flex;
     flex-flow: column;
@@ -159,3 +313,4 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         }
     }
 }
+*/
